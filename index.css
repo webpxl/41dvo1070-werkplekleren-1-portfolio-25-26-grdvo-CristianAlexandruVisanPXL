@@ -1,0 +1,64 @@
+		/* eenvoudige styling voor placeholders en footer spacing */
+		.hero {
+			padding: 2rem 0;
+		}
+		.placeholder-img {
+			background: #e9ecef;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #6c757d;
+			border: 1px dashed #ced4da;
+		}
+		.cv-dashboard {
+			display:flex;
+			gap:1rem;
+			align-items:flex-start;
+			margin: 1rem 0 2rem 0;
+			flex-wrap: wrap; /* zorgt dat het netjes stapelt op kleine schermen */
+		}
+		.cv-image {
+			max-width: 100%;
+			height: auto;
+			width: 400px;
+		}
+		.cv-box {
+			flex: 1;
+			border: 1px solid #ced4da;
+			padding: 1rem;
+			background:#f8f9fa;
+			/* hoogte wordt dynamisch aangepast via JS zodat het meeschuift met de afbeelding */
+			box-sizing: border-box; /* zorgt dat padding/border meetelt in width/height */
+			transition: width .15s ease, height .15s ease;
+		}
+		.projects .project {
+			text-align: center;
+		}
+		.projects .project .placeholder-img {
+			height: 180px;
+		}
+		.footer-contact {
+			background: #f1f3f5;
+			padding: 1.25rem;
+		}
+		.footer-contact h5 {
+			font-weight: 700;
+		}
+		.footer-contact .contact-item {
+			padding: 5px 0;
+			margin: 3px 0;
+			text-align:center;
+		}
+		.icon-placeholder {
+			display:inline-block;
+			width:28px;
+			height:28px;
+			background:#e9ecef;
+			border-radius:4px;
+			line-height:28px;
+			vertical-align:middle;
+			margin:0 5px;
+			color:#6c757d;
+			font-size:12px;
+			cursor: pointer; /* toegevoegd zodat het duidelijk is dat het klikbaar is */
+		}
