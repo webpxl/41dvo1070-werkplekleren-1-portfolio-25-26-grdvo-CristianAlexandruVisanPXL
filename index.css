@@ -1,4 +1,3 @@
-/* eenvoudige styling voor placeholders en footer spacing */
 		.hero {
 			padding: 2rem 0;
 		}
@@ -24,13 +23,11 @@
 			width: 400px;
 		}
 		.cv-box {
-			/* reverted: geen flex-container, terug naar oorspronkelijke eigenschappen */
 			flex: 1;
 			border: 1px solid #83ACDA;
 			padding: 1rem;
 			background: #769BC4;
-			/* hoogte wordt dynamisch aangepast via JS zodat het meeschuift met de afbeelding */
-			box-sizing: border-box; /* zorgt dat padding/border meetelt in width/height */
+			box-sizing: border-box;
 			transition: width .15s ease, height .15s ease;
 		}
 		.projects .project {
@@ -63,7 +60,7 @@
 			margin:0 5px;
 			color:#0B1836;
 			font-size:12px;
-			cursor: pointer; /* toegevoegd zodat het duidelijk is dat het klikbaar is */
+			cursor: pointer;
 		}
 		.project-card {
 			border: 1px solid #83ACDA;
@@ -91,6 +88,22 @@
 	color: #0B1836;
 }
 
+.project-image {
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-color: #769BC4;
+}
+
+.project-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+
 /* Op kleinere schermen: afbeelding onder tekst voor betere leesbaarheid */
 @media (max-width: 767.98px) {
 	.project-card .project-img {
@@ -110,7 +123,8 @@
 
 /* Pagina achtergrondkleur - wijzig hier naar wens */
 :root {
-	--page-bg: #83ACDA; /* voorbeeld: #FFFFFF of #F5F7FA of rgb(240,240,240) */
+	/* --page-bg: #83ACDA; voorbeeld: #FFFFFF of #F5F7FA of rgb(240,240,240) */
+	background: linear-gradient(45deg,white, #83ACDA,#83ACDA, white);
 }
 
 /* toepassen als achtergrond van de volledige pagina */
