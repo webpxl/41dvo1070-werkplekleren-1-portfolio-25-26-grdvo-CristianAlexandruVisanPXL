@@ -1,6 +1,73 @@
 		.hero {
 			padding: 2rem 0;
 		}
+
+		.hero-text {
+			font-size: 2.5rem;
+			font-weight: 800;
+			line-height: 1.2;
+			color: #0B1836;
+		}
+
+.disclaimer{
+	text-align: center;
+}
+.skill-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.skill-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 65px;
+}
+
+.s-bar {
+    height: 9px;
+    width: 100%;
+    background-color: #4A5568;
+    border-radius: 0px; 
+}
+
+.s-bar.active {
+    background-color: #0B1836; 
+}
+
+.skill-label {
+    font-weight: 800;
+    color: #0B1836;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    text-transform: none;
+}
+
+
+.skill-icon {
+    font-size: 1.8rem;
+    color: #0B1836;
+    display: flex;
+    align-items: center;
+}
+
+.soft-skills-list {
+    list-style: none !important; 
+    padding: 0 !important;       
+    margin: 0;
+}
+
+.soft-skills-list li {
+    background-color: #0B1836;
+    color: white;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+		
 		.placeholder-img {
 			background: #769BC4;
 			display: flex;
@@ -8,26 +75,6 @@
 			justify-content: center;
 			color: #0B1836;
 			border: 1px dashed #83ACDA;
-		}
-		.cv-dashboard {
-			display:flex;
-			gap:1rem;
-			align-items:flex-start;
-			margin: 1rem 0 2rem 0;
-			flex-wrap: wrap; 
-		}
-		.cv-image {
-			max-width: 100%;
-			height: auto;
-			width: 400px;
-		}
-		.cv-box {
-			flex: 1;
-			border: 1px solid #83ACDA;
-			padding: 1rem;
-			background: #769BC4;
-			box-sizing: border-box;
-			transition: width .15s ease, height .15s ease;
 		}
 		.projects .project {
 			text-align: center;
@@ -169,6 +216,27 @@
 	height: 100%;
 	object-fit: cover;
 	display: block;
+}
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+    .profile-image {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 767.98px) {
